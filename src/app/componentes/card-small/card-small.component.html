@@ -6,11 +6,11 @@
   <div class="card-small-news">
     <div class="card-small-title">
       <h1>
-        <a href="#">{{data}}</a>
+        <a [routerLink]="['content', id]">{{data}}</a>
       </h1>
     </div>
     <div class="card-small-description">
-      <a href="#">
+      <a [routerLink]="['content', id]">
         <p>{{descricao}} </p>
       </a>
     </div>

@@ -12,3 +12,4 @@
     ng g c componentes/card-main
     ng g c componentes/card-small
     ng g c pages/home
+    ng g c pages/content
