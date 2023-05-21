@@ -8,6 +8,10 @@
   </div>
   <div class="content_description">
     <p>{{descricao}}</p>
-    <a [routerLink]="['']"><< VOLTAR </a>
+    <a [routerLink]="['']"
+       [routerLinkActive]="['activated']"
+       [routerLinkActiveOptions]="{exact:true}">
+       << VOLTAR
+    </a>
   </div>
 </div>

@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 import {dataNews} from '../../data/dataNews'
 
 @Component({
@@ -14,13 +14,26 @@ export class ContentComponent implements OnInit {
   @Input() imagem:string = "";
   private id:string|null = "0";
 
-  constructor(private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute,
+              private navegador: Router) {
   }
 
   ngOnInit(): void {
+    //request param
     this.route.paramMap.subscribe(
       value => this.id = value.get("id")
     );
+
+    //query params (localhost4200/1?name=fulano
+    /*this.route.queryParams.subscribe(
+      value => this.nome = value.get("nome")
+    );*/
+
+    // forçar navagação de acordo com alguma regra
+    setInterval(()=> {
+      this.navegador.navigate(['/']);
+    }, 10000);
+
 
     this.setValuesToComponent(this.id);
     this.setImage();

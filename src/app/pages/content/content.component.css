@@ -28,3 +28,7 @@
 .content_description > p {
   padding: 10px;
 }
+
+.activated {
+  color: firebrick;
+}
