@@ -1,0 +1,29 @@
+.container-card-main {
+  border: #FFFFFF solid 1px;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 30px;
+}
+
+.card-main-title {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.card-main-title > h1 > a {
+  font-size: 25px;
+}
+
+.card-main-description > a > p{
+  color: grey;
+  margin-top: 10px;
+}
+
+.card-main-image > img {
+  width: 100%;
+  height: 100%;
+}
