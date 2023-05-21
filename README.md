@@ -3,7 +3,7 @@
 #### Requisitos
     - Angular 16.0.2
 
-#### Imagem do layout:
+#### Layout original:
     - https://dribbble.com/shots/18089191-Blog-Layout
 
 #### Comandos criação dos componentes
