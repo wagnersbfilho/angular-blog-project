@@ -1,5 +1,11 @@
 # Angular Blog Project
 
+#### Conceitos
+    - Componentes
+    - Diretivas (estruturais/atributos)
+    - Routing (paramMap/queryPrams)
+    - Services (Observables / subscribe / Model)
+
 #### Requisitos
     - Angular 16.0.2
 
@@ -13,3 +19,5 @@
     ng g c componentes/card-small
     ng g c pages/home
     ng g c pages/content
+    ng g c pages/pokemon
+    ng g s services/pokemon

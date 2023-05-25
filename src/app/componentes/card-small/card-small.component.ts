@@ -10,6 +10,7 @@ export class CardSmallComponent implements OnInit {
   @Input() descricao:string = "";
   @Input() imagem:string = "";
   @Input() id: string = "0";
+  @Input() url: string = "";
 
   ngOnInit(): void {
     let url:string = "../../../assets/img/";
